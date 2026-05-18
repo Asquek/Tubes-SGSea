@@ -141,6 +141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 475c570c91fef774aa45332a55e42640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XPGem
-  xpValue: 5
+  xpValue: 1
   magnetRadius: 3
   moveSpeed: 8

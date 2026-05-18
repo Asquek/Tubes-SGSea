@@ -23,7 +23,9 @@ public class XPManager : MonoBehaviour
     public void AddXP(float amount)
     {
         currentXP += amount;
-        onXPChanged?.Invoke(currentXP / xpToNextLevel);
+        float ratio = currentXP / xpToNextLevel;
+        onXPChanged?.Invoke(ratio);
+        HUDManager.Instance?.UpdateXP(ratio); // update XP bar
 
         if (currentXP >= xpToNextLevel)
         {
@@ -34,10 +36,11 @@ public class XPManager : MonoBehaviour
     void LevelUp()
     {
         currentXP -= xpToNextLevel;
-        xpToNextLevel *= xpScaling; // makin tinggi level, butuh XP lebih banyak
+        xpToNextLevel *= xpScaling;
         currentLevel++;
 
-        Debug.Log("Level Up! Sekarang level " + currentLevel);
+        HUDManager.Instance?.UpdateXP(0f);        // reset XP bar
+        HUDManager.Instance?.UpdateLevel(currentLevel); // update level text
         onLevelUp?.Invoke();
     }
 }
