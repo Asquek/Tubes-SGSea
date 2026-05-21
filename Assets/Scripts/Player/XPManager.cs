@@ -39,8 +39,9 @@ public class XPManager : MonoBehaviour
         xpToNextLevel *= xpScaling;
         currentLevel++;
 
-        HUDManager.Instance?.UpdateXP(0f);        // reset XP bar
-        HUDManager.Instance?.UpdateLevel(currentLevel); // update level text
+        GameStats.Instance.levelsReached = currentLevel;
+        HUDManager.Instance?.UpdateXP(0f);
+        HUDManager.Instance?.UpdateLevel(currentLevel);
         onLevelUp?.Invoke();
     }
 }

@@ -38,6 +38,10 @@ public class XPGem : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             XPManager.Instance?.AddXP(xpValue);
+
+            if (GameStats.Instance != null)
+                GameStats.Instance.gemsCollected++;
+
             Destroy(gameObject);
         }
     }

@@ -22,7 +22,9 @@ public class EnemyStats : MonoBehaviour
 
     void Die()
     {
-        // Spawn gem di posisi enemy
+        if (GameStats.Instance != null)
+            GameStats.Instance.enemiesKilled++;
+
         if (xpGemPrefab != null)
         {
             GameObject gem = Instantiate(xpGemPrefab, transform.position, Quaternion.identity);

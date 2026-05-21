@@ -43,8 +43,7 @@ public class PlayerStats : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("Player mati!");
-        // nanti diganti load scene Game Over
         gameObject.SetActive(false);
+        GameOverScreen.Instance?.Show();
     }
 }

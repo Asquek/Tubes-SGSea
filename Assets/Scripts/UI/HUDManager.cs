@@ -32,17 +32,15 @@ public class HUDManager : MonoBehaviour
 
     void Update()
     {
-        // Timer naik terus
         timer += Time.deltaTime;
+        GameStats.Instance.timeSurvived = timer; // track terus
+
         int minutes = Mathf.FloorToInt(timer / 60f);
         int seconds = Mathf.FloorToInt(timer % 60f);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
-        // Update HP bar tiap frame
         if (playerStats != null)
-        {
             hpBar.value = playerStats.currentHP / playerStats.maxHP;
-        }
     }
 
     public void UpdateXP(float ratio)
