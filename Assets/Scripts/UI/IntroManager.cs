@@ -106,4 +106,34 @@ public class IntroManager : MonoBehaviour
             yield return StartCoroutine(TransitionManager.Instance.FadeFromBlack());
         }
     }
+
+    [Header("Skip")]
+    public KeyCode skipKey = KeyCode.Escape; // tombol skip, bisa diganti di Inspector
+    private bool isSkipping = false;
+
+    void Update()
+    {
+        if (Input.GetKeyDown(skipKey) && !isSkipping)
+        {
+            isSkipping = true;
+            StopAllCoroutines(); // hentikan semua coroutine narasi
+            StartCoroutine(SkipIntro());
+        }
+    }
+
+    IEnumerator SkipIntro()
+    {
+    // Langsung fade ke hitam lalu ke gameplay
+        if (TransitionManager.Instance != null)
+        {
+            yield return StartCoroutine(TransitionManager.Instance.FadeToBlack());
+        }
+
+        SceneManager.LoadScene(gameplaySceneName);
+
+        if (TransitionManager.Instance != null)
+        {
+            yield return StartCoroutine(TransitionManager.Instance.FadeFromBlack());
+        }
+    }
 }
