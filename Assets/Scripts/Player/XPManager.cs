@@ -11,6 +11,12 @@ public class XPManager : MonoBehaviour
     public float xpScaling = 1.3f; // XP butuh naik tiap level
     public int currentLevel = 1;
 
+    [Header("Audio Settings")]
+    [Tooltip("Masukkan komponen AudioSource di sini")]
+    public AudioSource audioSource;
+    [Tooltip("Masukkan clip audio suara Level Up di sini")]
+    public AudioClip sfxLevelUp;
+
     [Header("Events")]
     public UnityEvent onLevelUp;
     public UnityEvent<float> onXPChanged; // buat update UI
@@ -38,6 +44,13 @@ public class XPManager : MonoBehaviour
         currentXP -= xpToNextLevel;
         xpToNextLevel *= xpScaling;
         currentLevel++;
+
+        // --- KODE BARU: Memainkan SFX Level Up ---
+        if (audioSource != null && sfxLevelUp != null)
+        {
+            audioSource.PlayOneShot(sfxLevelUp);
+        }
+        // -----------------------------------------
 
         GameStats.Instance.levelsReached = currentLevel;
         HUDManager.Instance?.UpdateXP(0f);

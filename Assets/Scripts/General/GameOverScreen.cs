@@ -21,6 +21,18 @@ public class GameOverScreen : MonoBehaviour
     public Button retryButton;
     public Button menuButton;
 
+    [Header("Audio Settings")]
+    [Tooltip("Masukkan komponen AudioSource di sini")]
+    public AudioSource audioSource;
+    [Tooltip("Masukkan clip audio suara Game Over di sini")]
+    public AudioClip sfxGameOver;
+    // --- KODE BARU: Slot SFX Klik yang Berbeda ---
+    [Tooltip("Masukkan clip audio suara klik tombol Retry")]
+    public AudioClip sfxKlikRetry;
+    [Tooltip("Masukkan clip audio suara klik tombol Menu")]
+    public AudioClip sfxKlikMenu;
+    // ---------------------------------------------
+
     void Awake()
     {
         Instance = this;
@@ -38,9 +50,13 @@ public class GameOverScreen : MonoBehaviour
         Time.timeScale = 0f;
         panel.SetActive(true);
 
+        if (audioSource != null && sfxGameOver != null)
+        {
+            audioSource.PlayOneShot(sfxGameOver);
+        }
+
         GameStats s = GameStats.Instance;
 
-        // Format waktu
         int min = Mathf.FloorToInt(s.timeSurvived / 60f);
         int sec = Mathf.FloorToInt(s.timeSurvived % 60f);
         timeText.text = $"- Waktu Survive -\n{min:00}:{sec:00}";
@@ -53,8 +69,8 @@ public class GameOverScreen : MonoBehaviour
     string GetGrade(GameStats s)
     {
         int score = 0;
-        if (s.timeSurvived > 300f) score++;  // survive 5 menit
-        if (s.timeSurvived > 600f) score++;  // survive 10 menit
+        if (s.timeSurvived > 300f) score++;
+        if (s.timeSurvived > 600f) score++;
         if (s.enemiesKilled > 100) score++;
         if (s.enemiesKilled > 300) score++;
         if (s.levelsReached > 10) score++;
@@ -70,15 +86,35 @@ public class GameOverScreen : MonoBehaviour
         };
     }
 
+    // --- MODIFIKASI: Ditambahkan SFX Klik Retry ---
     void Retry()
     {
+        if (audioSource != null && sfxKlikRetry != null)
+        {
+            audioSource.PlayOneShot(sfxKlikRetry);
+        }
+
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    // --- MODIFIKASI: Ditambahkan SFX Klik Menu ---
     void MainMenu()
     {
+        if (audioSource != null && sfxKlikMenu != null)
+        {
+            audioSource.PlayOneShot(sfxKlikMenu);
+        }
+
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Main Menu");
+
+        if (TransitionManager.Instance != null)
+        {
+            TransitionManager.Instance.DotTransitionToScene("Main Menu");
+        }
+        else
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
     }
 }
