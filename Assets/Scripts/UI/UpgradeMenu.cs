@@ -94,7 +94,8 @@ public class UpgradeMenu : MonoBehaviour
                 if (ps) ps.regenPerSecond += 1f;
                 break;
             case "Projectile +1":
-                Debug.Log("Multi projectile — next step!");
+                WeaponOrb orb2 = GameObject.FindWithTag("Player").GetComponent<WeaponOrb>();
+                if (orb2) orb2.projectileCount++;
                 break;
         }
     }
