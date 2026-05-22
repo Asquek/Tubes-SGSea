@@ -413,7 +413,7 @@ MonoBehaviour:
   fadeOutDuration: 1
   delayBetweenSentences: 0.3
   delayAfterLast: 2
-  gameplaySceneName: GameScene
+  gameplaySceneName: Main Menu
   skipKey: 27
 --- !u!1 &1232876904
 GameObject:

@@ -41,7 +41,7 @@ public class IntroManager : MonoBehaviour
     public float delayAfterLast = 2f;
 
     [Header("Scene")]
-    public string gameplaySceneName = "GameScene";
+    public string gameplaySceneName = "Main Menu";
 
     void Start()
     {
