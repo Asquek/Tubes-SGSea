@@ -25,6 +25,14 @@ public class EnemyStats : MonoBehaviour
         if (GameStats.Instance != null)
             GameStats.Instance.enemiesKilled++;
 
+        // Cek kalau ini boss
+        BossHealth bh = GetComponent<BossHealth>();
+        if (bh != null)
+        {
+            bh.NotifyDead();
+            return; // BossHealth yang handle destroy
+        }
+
         if (xpGemPrefab != null)
         {
             GameObject gem = Instantiate(xpGemPrefab, transform.position, Quaternion.identity);
