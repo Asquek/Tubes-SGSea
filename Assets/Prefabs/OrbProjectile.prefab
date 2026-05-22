@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1390191040564773046}
   - component: {fileID: 766613028361214336}
   - component: {fileID: 1674549010929491413}
+  - component: {fileID: 6874722155328567439}
   m_Layer: 0
   m_Name: OrbProjectile
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -0.25, y: -0.25, z: -0.25}
+  m_LocalScale: {x: -0.1, y: -0.1, z: -0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -145,3 +146,25 @@ MonoBehaviour:
   damage: 20
   lifetime: 3
   sfxTembak: {fileID: 8300000, guid: 52af83ec5c9c25546857d2ff608a4395, type: 3}
+--- !u!95 &6874722155328567439
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8004459653142291800}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a1c053d406950534089bd1bb86ce61e2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

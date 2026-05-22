@@ -1076,7 +1076,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1599262101
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -6069,7 +6069,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 0000000095cd525f
+  m_ApplyToSortingLayers: 0000000095cd525f3bfd77e9
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -6914,6 +6914,12 @@ MonoBehaviour:
     isBossWave: 0
   - waveName: Wave 1 Boss
     enemyData: {fileID: 11400000, guid: a93b715ad673a97489b8656ff2a27b22, type: 2}
+    startAtMinute: 0
+    spawnInterval: 0
+    maxCount: 0
+    isBossWave: 1
+  - waveName: Wave 2 Boss
+    enemyData: {fileID: 11400000, guid: b3885d5f934edd6458a13df8a663677c, type: 2}
     startAtMinute: 0
     spawnInterval: 0
     maxCount: 0
@@ -9114,7 +9120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponOrb
   projectilePrefab: {fileID: 8004459653142291800, guid: 929228221f56bdb468114dc6f63ebce6, type: 3}
-  fireRate: 10
+  fireRate: 2
 --- !u!114 &1784782497
 MonoBehaviour:
   m_ObjectHideFlags: 0
