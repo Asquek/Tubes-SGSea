@@ -23,12 +23,12 @@ public class MainMenu : MonoBehaviour
         // 2. Memanggil transisi dari TransitionManager menuju IntroScene
         if (TransitionManager.Instance != null)
         {
-            TransitionManager.Instance.DotTransitionToScene("IntroScene");
+            TransitionManager.Instance.DotTransitionToScene("GameScene");
         }
         else
         {
             // Fail-safe jika kamu testing tanpa TransitionManager di hierarchy
-            SceneManager.LoadScene("IntroScene");
+            SceneManager.LoadScene("GameScene");
         }
     }
 
