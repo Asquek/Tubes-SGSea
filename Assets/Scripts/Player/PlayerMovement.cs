@@ -7,28 +7,31 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movement;
     private SpriteRenderer sr;
 
+    private Animator anim;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>(); // tambah ini
     }
 
     void Update()
     {
-        // Ambil input
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-
-        // Normalize biar diagonal gak lebih cepet
         movement = movement.normalized;
 
-        // Flip sprite kiri/kanan
         if (movement.x > 0) sr.flipX = false;
         if (movement.x < 0) sr.flipX = true;
+
+        // Update animator
+        anim.SetFloat("Speed", movement.magnitude);
     }
 
     void FixedUpdate()
     {
         rb.linearVelocity = movement * speed;
     }
+
 }

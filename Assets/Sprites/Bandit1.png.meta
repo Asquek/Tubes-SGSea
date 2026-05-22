@@ -1,31 +1,40 @@
 fileFormatVersion: 2
-guid: 040f97e1584c6994f8d4cb008e3c3abb
+guid: 9cac5e7f77cd8ba47a5676b1b55b1f50
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 56845282949476348
-    second: monster_flesh_eye_sheet_0
+      213: 4679174190430369545
+    second: Bandit1_0
   - first:
-      213: 2448907845037124604
-    second: monster_flesh_eye_sheet_1
+      213: 512926315401039704
+    second: Bandit1_1
   - first:
-      213: 9049569031800698310
-    second: monster_flesh_eye_sheet_2
+      213: -8130619252370334418
+    second: Bandit1_2
   - first:
-      213: 2357241232996245446
-    second: monster_flesh_eye_sheet_3
+      213: 457447501685797288
+    second: Bandit1_3
   - first:
-      213: 6611404281625119079
-    second: monster_flesh_eye_sheet_4
+      213: 4948074053533559832
+    second: Bandit1_4
   - first:
-      213: 383362233013552695
-    second: monster_flesh_eye_sheet_5
+      213: -5254149645086047524
+    second: Bandit1_5
   - first:
-      213: 1327706055169531315
-    second: monster_flesh_eye_sheet_6
+      213: -2498814734596894772
+    second: Bandit1_6
   - first:
-      213: 7220570511011013976
-    second: monster_flesh_eye_sheet_7
+      213: 8874031263333515452
+    second: Bandit1_7
+  - first:
+      213: -3811181032279879204
+    second: Bandit1_8
+  - first:
+      213: -3657584366376446206
+    second: Bandit1_9
+  - first:
+      213: 4364876278842340590
+    second: Bandit1_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,13 +130,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: monster_flesh_eye_sheet_0
+      name: Bandit1_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 535
-        width: 231
-        height: 212
+        x: 7
+        y: 71
+        width: 17
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cff2c51db74f9c000800000000000000
-      internalID: 56845282949476348
+      spriteID: 90737c68224cfe040800000000000000
+      internalID: 4679174190430369545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_flesh_eye_sheet_1
+      name: Bandit1_1
       rect:
         serializedVersion: 2
-        x: 274
-        y: 540
-        width: 223
-        height: 208
+        x: 39
+        y: 71
+        width: 17
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cfbea1fc5b44cf120800000000000000
-      internalID: 2448907845037124604
+      spriteID: 85fcd6924c74e1700800000000000000
+      internalID: 512926315401039704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_flesh_eye_sheet_2
+      name: Bandit1_2
       rect:
         serializedVersion: 2
-        x: 531
-        y: 542
-        width: 235
-        height: 204
+        x: 71
+        y: 71
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,20 +189,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c53bd67617869d70800000000000000
-      internalID: 9049569031800698310
+      spriteID: e2d938a2edc3a2f80800000000000000
+      internalID: -8130619252370334418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_flesh_eye_sheet_3
+      name: Bandit1_3
       rect:
         serializedVersion: 2
-        x: 20
-        y: 287
-        width: 231
-        height: 198
+        x: 103
+        y: 71
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +211,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6cf15a6896a96b020800000000000000
-      internalID: 2357241232996245446
+      spriteID: 8a13f51441e295600800000000000000
+      internalID: 457447501685797288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_flesh_eye_sheet_4
+      name: Bandit1_4
       rect:
         serializedVersion: 2
-        x: 275
-        y: 280
-        width: 236
-        height: 207
+        x: 7
+        y: 40
+        width: 17
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +233,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 76903c85a2d60cb50800000000000000
-      internalID: 6611404281625119079
+      spriteID: 81ce13bb2271ba440800000000000000
+      internalID: 4948074053533559832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_flesh_eye_sheet_5
+      name: Bandit1_5
       rect:
         serializedVersion: 2
-        x: 532
-        y: 287
-        width: 231
-        height: 198
+        x: 39
+        y: 39
+        width: 17
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 736c2177be9f15500800000000000000
-      internalID: 383362233013552695
+      spriteID: cd2c6e74cb28517b0800000000000000
+      internalID: -5254149645086047524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_flesh_eye_sheet_6
+      name: Bandit1_6
       rect:
         serializedVersion: 2
-        x: 19
-        y: 30
-        width: 235
-        height: 204
+        x: 71
+        y: 40
+        width: 17
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +277,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3bdd3886f95fc6210800000000000000
-      internalID: 1327706055169531315
+      spriteID: ccf07d8fc3d625dd0800000000000000
+      internalID: -2498814734596894772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_flesh_eye_sheet_7
+      name: Bandit1_7
       rect:
         serializedVersion: 2
-        x: 274
-        y: 28
-        width: 223
-        height: 208
+        x: 103
+        y: 40
+        width: 17
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,8 +299,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 855e870af9e943460800000000000000
-      internalID: 7220570511011013976
+      spriteID: cb084b8da64e62b70800000000000000
+      internalID: 8874031263333515452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit1_8
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 39
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd1504c2b07fb1bc0800000000000000
+      internalID: -3811181032279879204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit1_9
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 41
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2071c12c566ad3dc0800000000000000
+      internalID: -3657584366376446206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit1_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 6
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee43de879d7239c30800000000000000
+      internalID: 4364876278842340590
       vertices: []
       indices: 
       edges: []
@@ -310,14 +385,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      monster_flesh_eye_sheet_0: 56845282949476348
-      monster_flesh_eye_sheet_1: 2448907845037124604
-      monster_flesh_eye_sheet_2: 9049569031800698310
-      monster_flesh_eye_sheet_3: 2357241232996245446
-      monster_flesh_eye_sheet_4: 6611404281625119079
-      monster_flesh_eye_sheet_5: 383362233013552695
-      monster_flesh_eye_sheet_6: 1327706055169531315
-      monster_flesh_eye_sheet_7: 7220570511011013976
+      Bandit1_0: 4679174190430369545
+      Bandit1_1: 512926315401039704
+      Bandit1_10: 4364876278842340590
+      Bandit1_2: -8130619252370334418
+      Bandit1_3: 457447501685797288
+      Bandit1_4: 4948074053533559832
+      Bandit1_5: -5254149645086047524
+      Bandit1_6: -2498814734596894772
+      Bandit1_7: 8874031263333515452
+      Bandit1_8: -3811181032279879204
+      Bandit1_9: -3657584366376446206
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

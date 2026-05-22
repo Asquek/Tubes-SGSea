@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb38a4be085504e41805c3955feffb42, type: 3}
-  m_Name: Boss
+  m_Name: Boss2
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
-  enemyName: Boss Mafia
-  prefab: {fileID: 5900948617060508002, guid: 20d3ac9438501fc4d88ba206c9a15a02, type: 3}
-  hp: 100
-  damage: 20
-  speed: 1
+  enemyName: Thomas Shelby
+  prefab: {fileID: 5900948617060508002, guid: b42fb48cc8ca6fa4d8282c0c14ced75d, type: 3}
+  hp: 250
+  damage: 10
+  speed: 2
   xpDrop: 5
   isBoss: 1
