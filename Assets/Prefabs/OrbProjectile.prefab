@@ -144,3 +144,4 @@ MonoBehaviour:
   speed: 8
   damage: 20
   lifetime: 3
+  sfxTembak: {fileID: 8300000, guid: 52af83ec5c9c25546857d2ff608a4395, type: 3}
